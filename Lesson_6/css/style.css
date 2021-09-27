@@ -1,0 +1,437 @@
+/* 
+&display=swap&subset=cyrillic-ext 
+*/
+@import url(https://fonts.googleapis.com/css?family=Yaldevi:200,300,regular,500,600,700&display=swap&subset=cyrillic-ext);
+
+@font-face {
+  font-family: "Proxima Nova Rg";
+  src: url("../fonts/ProximaNova-Regular.woff2") format("woff2"),
+    url("../fonts/ProximaNova-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Proxima Nova Rg";
+  src: url("../fonts/ProximaNova-Bold.woff2") format("woff2"),
+    url("../fonts/ProximaNova-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+img {
+  vertical-align: top;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 16px; /* по умолчанию */
+}
+body {
+  background-color: rgb(241, 241, 210);
+  line-height: 1;
+  font-family: "Yaldevi";
+}
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  padding: 20px;
+}
+/* ------------------------------ */
+h2 {
+  font-family: "Proxima Nova Rg";
+  font-weight: 700;
+  font-size: 35px;
+  text-align: center;
+}
+.block__text {
+  font-weight: 700;
+}
+.block__text2 {
+  opacity: 0;
+}
+.block__text3 {
+  border: 2px solid #000;
+  font-style: italic;
+  font-size: 22px;
+  padding: 10px;
+  color: #0000ff;
+  margin-bottom: 20px;
+}
+.block__text4 {
+  border: 5px dotted #adff2f;
+  max-width: 500px;
+  margin: 0 auto 20px;
+  max-height: 200px;
+  overflow: hidden;
+  border-radius: 35%;
+  padding: 30px;
+}
+.block__text5 {
+  display: inline-block;
+  font-style: italic;
+  text-align: center;
+  border: 5px dashed grey;
+  width: 150px;
+  height: 150px;
+  overflow: auto;
+  padding: 10px;
+  margin-right: 250px;
+  text-shadow: 1px 4px 3px #000;
+}
+.block__text6 {
+  display: inline-block;
+  border-bottom: 3px solid #008080;
+  margin: 0 0 20px 0;
+  word-spacing: 10px;
+  letter-spacing: 3px;
+  width: 250px;
+}
+.block__text7 {
+  border: 3px solid #000;
+  padding: 40px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 4px 10px #663399,
+    inset 3px 2px 10px 10px rgba(255, 255, 0, 1);
+  color: rgb(218, 32, 32);
+  opacity: 0.7;
+  margin-bottom: 30px;
+  border-left: 10px dotted #000000;
+}
+.block__text8 {
+  outline: 5px solid #ff0000;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.block__text9 {
+  display: inline;
+  border: 5px solid #808080;
+  border-radius: 30px;
+  box-shadow: 2px 3px 2px 4px green;
+}
+.image__title {
+  margin: 20px;
+  background-color: #d87093;
+}
+.image1 {
+  width: 250px;
+  height: 250px;
+  margin: 20px;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+.image2 {
+  max-width: 250px;
+  max-height: 250px;
+  border-bottom: 5px double #ff0000;
+}
+.image3 {
+  display: block;
+  max-width: 150px;
+  margin: 40px auto;
+}
+.image4 {
+  outline: 50px solid #4339cf;
+  opacity: 0.5;
+  margin: 30px;
+}
+.image5 {
+  display: none;
+}
+.image6 {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  box-shadow: 3px 2px 10px 20px #ff0000;
+}
+.image7 {
+  visibility: hidden;
+}
+.image8 {
+  margin: -50px;
+}
+.lowercase__title {
+  margin: 20px;
+}
+.link {
+  display: inline-block;
+  text-decoration: underline;
+  margin: 20px;
+  background-color: #adff2f;
+  border: 1px solid #000;
+}
+.link1 {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #ffa500;
+  outline: 5px double #ff0000;
+  text-align: right;
+}
+.link2 {
+  display: block;
+  margin: 20px;
+  text-align: right;
+  border-top: 3px dotted #0000ff;
+  border-bottom: 3px dotted #0000ff;
+}
+.link3 {
+  padding: 30px;
+  margin: 20px;
+  text-shadow: 5px 5px 5px #000;
+}
+.link4 {
+  font-size: 30px;
+  border: 3px solid #000;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 1px 1px 5px 20px #808080;
+}
+.link5 {
+  display: inline-block;
+  margin: 30px;
+  text-decoration: underline;
+  color: #000;
+  opacity: 0.7;
+  background-color: #ffff00;
+}
+.lowercase1 {
+  border: 1px solid #ff0000;
+}
+.lowercase2 {
+  background-color: rgba(255, 255, 0, 0.5);
+}
+.lowercase3 {
+  visibility: hidden;
+}
+.footerblock {
+  margin: 20px;
+  padding: 30px;
+  text-align: center;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.footerp {
+  font-family: "Proxima Nova Rg";
+  font-size: 20px;
+  margin: 20px;
+  opacity: 0.5;
+}
+.footerspan {
+  margin: 20px;
+  display: block;
+  border: 3px solid #000;
+}
+.footertext {
+  margin: 20px;
+  border-top: 2px solid #ff0000;
+  border-right: 2px dotted #002fff;
+  border-bottom: 10px double #000;
+  border-left: 5px dashed #663399;
+}
+.footerlink {
+  font-size: 25px;
+  text-shadow: 5px 5px 3px rgb(226, 7, 7);
+}
+
+/*
+border
+Универсальное свойство border позволяет одновременно 
+установить толщину, 
+стиль и цвет границы вокруг элемента.
+border: 1px solid #000; (размер стиль цвет)
+Основные стили -solid dotted dashed double
+
+Синтаксис общего свойства:
+border: толщина_линии стиль_линии цвет_линии
+
+*/
+/*
+outline
+Универсальное свойство, одновременно устанавливающее цвет, 
+стиль и толщину внешней границы на всех четырех сторонах элемента. 
+В отличие от линии, задаваемой через border, свойство outline 
+не влияет на положение блока и его ширину. 
+Также нельзя задать параметры линии на отдельных сторонах элемента, 
+outline применяется сразу ко всем четырём сторонам.
+*/
+
+/*
+border-radius
+Устанавливает радиус скругления уголков блока.
+border-radius:50%; - кргуг
+Можно использовать вместе с overflow: hidden;
+*/
+
+/*
+box-shadow
+Добавляет тень к элементу.
+box-shadow: сдвиг_по_гориз сдвиг_по_верт радиус расстояние
+Флаг inset для установки внутренней тени
+Можно добавить много теней. На тень влияет свойство border-radius.
+filter: drop-shadow(0px 0px 10px #77608d);
+*/
+
+/*
+opacity
+Определяет уровень прозрачности элемента.
+Отличие opacity:0; от display:none; в том что блок 
+не убирается из верстки а только становиться прозрачным, 
+то есть занимаемое им место остается. Так же, 
+с прозрачными элементами все еще можно взаимодействовать, 
+например кликать по ссылкам.
+*/
+/*
+visibility
+Предназначен для отображения или скрытия элемента.
+Отличие visibility: hidden; от display:none; в том что блок 
+не убирается из верстки а только скрывается, 
+то есть занимаемое им место остается.
+Отличие visibility: hidden; от opacity:0;
+ в том что блок скрывается и взаимодействовать с ним нельзя.
+*/
+/*
+.text-link {
+	color: green;
+	border-bottom: 2px dotted;
+	display: inline-block;
+}
+.text-link:hover {
+	color: red;
+}
+*/
+/*
+.link {
+	display: inline-block;
+	background-color: #794f45;
+	display: inline-block;
+	color: #fff;
+	padding: 15px;
+	border: 5px solid red;
+}
+.link:hover {
+	border: 5px solid transparent;
+}
+*/
+
+/* 
+.block {
+	padding: 20px;
+	margin: 0px 0px 30px 0px;
+}
+.block__title {
+	font-weight: 700;
+	font-size: 30px;
+	margin: 0px 0px 20px 0px;
+}
+.block__body {
+}
+*/
+/*
+vertical-align - выравнивает строчные 
+и блочно-строчные объекты по вертикали
+top - по верху
+middle - по центру
+bottom - по низу
+*/
+
+/*
+Схлопывание внешнего отступа происходит 
+только с блочными объектами
+*/
+/*
+.block__texts {
+	font-size: 0;
+}
+
+.block__items {
+	font-size: 0;
+}
+.block__item {
+	display: inline-block;
+	max-width: 200px;
+	max-height: 200px;
+	overflow: hidden;
+	padding: 15px;
+	background-color: #794f45;
+	color: #fff;
+	font-size: 20px;
+	vertical-align: middle;
+}
+
+.span {
+	display: block;
+}
+.link {
+	margin: 0px 0px 20px 0px;
+	display: inline-block;
+}
+.text {
+	display: inline-block;
+	max-width: 100px;
+	background-color: #77608d;
+	padding: 10px;
+	font-size: 16px;
+	margin: 0px 30px 0px 0px;
+}
+
+.block__one,
+.block__two {
+	padding: 30px;
+	color: #fff;
+	font-size: 24px;
+}
+
+.block__one {
+	background-color: #794f45;
+}
+.block__two {
+	background-color: #7a956b;
+	margin: -50px 0px 0px 0px;
+}
+
+.big-text {
+	max-height: 200px;
+	background-color: #77608d;
+	padding: 30px;
+	display: block;
+	font-size: 30px;
+	color: #fff;
+	line-height: 120%;
+	overflow: auto;
+}
+*/
