@@ -1,0 +1,598 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic");
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+Display:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic&display=swap&subset=cyrillic-ext);
+
+@font-face {
+  font-family: "HelveticaNeueCyr";
+  src: url("../fonts/HelveticaNeueCyr-Roman.woff2") format("woff2"),
+    url("../fonts/HelveticaNeueCyr-Roman.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+img {
+  vertical-align: top;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 16px; /* по умолчанию */
+}
+body {
+  line-height: 1;
+  /* color: #000; */
+  /* font-family:""; */
+  font-family: "Roboto";
+  font-size: 30px;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+}
+/* ------------------------------ */
+
+/*
+Обращение к дочернему элементу, 
+при состоянии ("при наведении") родителя 
+*/
+/*
+.block:hover .link {
+
+}
+*/
+
+/* Псевдоклассы */
+/* Псевдоклассы состояния */
+
+/* Срабатывает для посещенных ссылок 
+.link:visited {
+}
+*/
+/*
+Замечание: Из-за причин приватности, 
+браузеры строго ограничивают стили, которые вы 
+можете применить к элементу, используя этот псевдо-класс:
+только color, background-color, border-color,
+border-bottom-color, border-left-color, border-right-color,
+border-top-color, outline-color, column-rule-color, 
+fill и stroke. Заметьте также, что альфа-канал будет 
+игнорироваться: будет использоваться альфа-канал, 
+используемый для непосещённых ссылок вместо него 
+(но если прозрачность - 0, то в этот случае 
+игнорируется весь цвет, и один из используемых 
+стилей для непосещённых ссылок).
+*/
+
+/* 
+:hover
+Срабатывает при наведении на элемент, 
+часто применяется применяется как для ссылок так
+и для любого другого элемента.
+*/
+
+/*
+:focus
+Срабатывает при получении элементом фокуса. 
+Часто применяется к елементам форм. Например инпутам.
+*/
+
+/*
+:active
+Срабатывает при нажатии на элемент. 
+В основном применяется к ссылкам и кнопкам.
+*/
+
+/*
+.button {
+	border-radius: 5px;
+	padding: 20px 30px;
+	color: #fff;
+	background-color: yellowgreen;
+	box-shadow: 0px 8px 0px rgb(55, 73, 18);
+	position: relative;
+	top: 0;
+}
+.button:hover {
+	background-color: rgb(172, 228, 61);
+}
+.button:active {
+	top: 4px;
+	box-shadow: 0px 4px 0px rgb(55, 73, 18);
+}
+*/
+
+/*
+:target
+Срабатывает когда элемент является объектом 
+на который ссылаются
+*/
+
+/* Псевдоклассы положения в коде */
+
+/*
+:first-child
+Обращение к первому элементу в блоке
+*/
+/*
+.text p:first-child {
+	color: red;
+}
+*/
+/* Первый в блоке тег P, даже если выше 
+него есть другие теги */
+/*
+.text p:first-of-type {
+	color: red;
+}
+*/
+
+/* Любой оъект который первый внутри родителя */
+/*
+.text *:first-child {
+	color: red;
+}
+*/
+
+/*
+:last-child
+Обращение к последнему элементу в блоке
+*/
+/*
+.text p:last-child {
+	color: red;
+}
+*/
+/* Последний в блоке тег P, 
+если ниже него ничего нет  */
+/*
+.text p:last-of-type {
+ color: red;
+}
+*/
+/* Убираем лишний отступ. Вариант №1 */
+/*
+.text *:last-child {
+	margin-bottom: 0;
+}
+*/
+/*
+:nth-child(порядковый номер элемента)
+Обращение к конкретным элементам в блоке
+*/
+
+/* odd - нечетные */
+/* even - четные */
+.text p:nth-child(odd) {
+  color: red;
+}
+
+.text p:nth-child(2):hover {
+  color: green;
+}
+
+/* Убираем лишний отступ. Вариант №2 
+ для любых объектов внутри объектов с классом .text
+ добавить внешний отступ 20px вниз, 
+ но кроме последнего объекта
+*/
+/*
+.text *:not(:last-child) {
+  margin: 0px 0px 20px 0px;
+}
+*/
+/*===============================================*/
+/*
+Псевдоэлемент ::first-line задает стиль первой 
+строки форматированного текста. 
+Длина этой строки зависит от многих факторов, 
+таких как используемый шрифт, 
+размер окна браузера, ширина блока, языка и т.д. 
+В правилах стиля допустимо 
+использовать только свойства, относящиеся к шрифту, 
+изменению цвета текста и фона.
+*/
+/*
+.content::first-line {
+   color: red;
+}
+*/
+/*
+Псевдоэлемент ::first-letter определяет стиль первого
+ символа в тексте элемента, 
+к которому добавляется. 
+К этому псевдоэлементу могут применяться только
+ стилевые свойства, 
+связанные со свойствами шрифта, полями, отступами,
+ границами, цветом и фоном.
+*/
+/*
+.content {
+	text-indent: 30px;
+}
+.content::first-letter {
+	color: red;
+	font-size: 80px;
+}
+*/
+
+/*
+::before, ::after - СТРОЧНЫЕ !!!!
+использование content ОБЯЗАТЕЛЬНО! 
+
+*/
+.main {
+  margin: 20px;
+}
+main a:nth-child(5)::first-letter {
+  font-size: 50px;
+}
+.block {
+  margin-bottom: 30px;
+}
+.block div:nth-child(3):hover {
+  font-weight: 900;
+  color: #ff1476;
+  max-width: 500px;
+  border: 5px dotted green;
+  padding: 70px;
+  border-radius: 50%;
+  text-align: center;
+}
+.block div:nth-child(2) {
+  color: blue;
+}
+.block div:nth-child(4) {
+  background-color: chartreuse;
+}
+.block a:last-child {
+  color: brown;
+}
+.block a:nth-child(4) {
+  opacity: 0.5;
+}
+a:nth-child(3) {
+  display: inline-block;
+  visibility: collapse;
+}
+.title_hw1 {
+  font-family: "Noto+Sans+Display";
+  font-weight: 700;
+  font-size: 35px;
+  margin: 0 0 30px 450px;
+  max-width: 500px;
+  text-align: center;
+  line-height: 40px;
+}
+.title_hw1:hover {
+  background-color: green;
+  border: 2px solid #ff0000;
+  color: yellow;
+  box-shadow: 3px 3px 3px grey;
+}
+.text1 {
+  border: 5px double #000;
+  padding: 20px;
+  letter-spacing: 3px;
+  word-spacing: 5px;
+}
+.text1::first-line {
+  font-size: 10px;
+  text-decoration: line-through;
+}
+.text2,
+.text3 {
+  margin: 20px;
+}
+.text4 {
+  padding: 20px;
+  background-color: #f1dddd;
+  color: rgb(223, 170, 56);
+  margin-bottom: 20px;
+}
+.text4:hover {
+  background-color: #123;
+}
+.paragraph {
+  padding: 30px;
+}
+.paragraph p {
+  margin: 0 0 20px 20px;
+}
+.paragraph *:last-child {
+  margin-bottom: 0;
+}
+.paragraph p:first-of-type {
+  font-style: italic;
+  font-weight: 100;
+}
+.link {
+  display: inline-block;
+  margin: 20px;
+}
+.link:focus {
+  outline: 5px solid #000;
+}
+.paragraph p:nth-child(3) {
+  text-decoration: underline;
+}
+.paragraph p:nth-child(4)::first-line {
+  text-transform: capitalize;
+  background-color: violet;
+}
+.paragraph p:last-of-type::first-letter {
+  font-size: 45px;
+  color: tomato;
+}
+.links a {
+  display: inline-block;
+  margin: 20px;
+}
+.link1:visited {
+  color: red;
+}
+.link1:hover {
+  background-color: royalblue;
+  border: 10px dashed #000;
+}
+.link2:active {
+  text-transform: uppercase;
+  font-size: 50px;
+}
+.links a:nth-child(2) {
+  border: 3px solid orange;
+  padding: 10px;
+}
+.link6:hover {
+  display: none;
+}
+.homework2 {
+  margin-bottom: 30px;
+}
+.block_ol {
+  margin-bottom: 30px;
+}
+.title_hw2 {
+  font-family: "Noto+Sans+Display";
+  font-weight: 700;
+  font-size: 35px;
+  margin: 0 0 30px 450px;
+  max-width: 500px;
+  text-align: center;
+  line-height: 40px;
+}
+.title_hw2:hover {
+  font-size: 60px;
+  text-shadow: 5px 5px 5px #ff0000;
+}
+ul li {
+  margin: 0 0 20px 0;
+  padding: 0 0 0 20px;
+}
+ul :last-child {
+  margin-bottom: 0px;
+}
+.listmarker {
+  margin-bottom: 50px;
+}
+.listmarker li::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 20px;
+  background-color: green;
+  margin: 0 10px 0 0;
+  border-radius: 4px;
+}
+.listmarker :nth-child(3) {
+  opacity: 0.1;
+}
+.listmarker :first-child {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.listmarker li:hover::before {
+  background-color: rgb(221, 245, 8);
+}
+.listmarker2 {
+  margin-bottom: 50px;
+}
+.listmarker2 ::after {
+  content: "";
+  display: inline-block;
+  width: 400px;
+  height: 3px;
+  background-color: springgreen;
+  vertical-align: bottom;
+}
+.blocknumber {
+  margin-bottom: 50px;
+}
+.listnumber {
+  counter-reset: item;
+}
+ol li {
+  margin-bottom: 20px;
+}
+.listnumber:last-child {
+  margin-bottom: 0px;
+}
+.listnumber li::before {
+  counter-increment: item;
+  content: counter(item) ")";
+  display: inline-block;
+  vertical-align: top;
+  color: green;
+  margin: 0 20px 0 0;
+}
+.listnumber2 {
+  counter-reset: item;
+}
+.listnumber2 li::before {
+  counter-increment: item;
+  content: counter(item) ")";
+  display: inline-block;
+  vertical-align: top;
+  color: red;
+  margin: 0 20px 0 0;
+}
+.listnumber2 ::after {
+  content: url(../img/icon.png);
+  display: inline-block;
+  vertical-align: top;
+}
+.listnumber2 :last-child {
+  margin-bottom: 0px;
+}
+.homework3 {
+  font-family: "Noto+Sans+Display";
+  font-weight: 700;
+  font-size: 35px;
+  margin: 0 0 30px 450px;
+  max-width: 500px;
+  text-align: center;
+  line-height: 40px;
+}
+.blockcar {
+  max-width: 1020px;
+  font-family: "Roboto";
+  background-color: #f5f5f5;
+  margin: 0 auto;
+  padding: 0 0 20px 0;
+  margin-bottom: 30px;
+}
+.headercar p {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 2.5px;
+  color: #4b4b4b;
+  margin-bottom: 33px;
+}
+
+.headercar p::before {
+  content: url(../img/icon.png);
+  vertical-align: top;
+  margin: 0 16px 0 0;
+}
+.headercar h2 {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  color: #02133c;
+  margin-bottom: 68px;
+}
+.info h3 {
+  font-weight: 900;
+  font-size: 19px;
+  line-height: 26px;
+  color: #02133c;
+  margin-bottom: 20px;
+}
+.info p {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: #4b4b4b;
+  max-width: 235px;
+  margin: 0 0 0 86px;
+}
+.smallblock1,
+.smallblock2,
+.smallblock3 {
+  max-width: 324px;
+  margin: 0 24px 0 0;
+  display: inline-block;
+}
+.smallblock3 {
+  margin: 0 -24px 0 0;
+}
+.smallblock1 h3::before {
+  content: url(../img/icons/car_quality_service_24x.png);
+  display: inline-block;
+  vertical-align: bottom;
+  margin: 0 15px -45px 0;
+}
+.smallblock2 h3::before {
+  content: url(../img/icons/car_certified_pros_24x.png);
+  display: inline-block;
+  vertical-align: bottom;
+  margin: 0 15px -40px 0;
+}
+.smallblock3 h3::before {
+  content: url(../img/icons/car_team_24x.png);
+  display: inline-block;
+  vertical-align: bottom;
+  margin: 0 15px -35px 0;
+}
+.title_hw4 {
+  font-family: "Noto+Sans+Display";
+  font-weight: 700;
+  font-size: 35px;
+  margin: 0 0 30px 450px;
+  max-width: 500px;
+  text-align: center;
+  line-height: 40px;
+}
+.blockbottom {
+  font-family: "HelveticaNeueCyr";
+  max-width: 255px;
+  background-color: #252525;
+  border-radius: 6px;
+  padding: 24px;
+}
+.title {
+  font-size: 22px;
+  color: #fff;
+  text-transform: capitalize;
+  line-height: 25.65px;
+  letter-spacing: -0.28px;
+  margin-bottom: 36px;
+}
+.textbottom {
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: -0.16px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.title::after {
+  content: "";
+  display: inline-block;
+  height: 2px;
+  width: 56px;
+  background-color: #34c759;
+}
