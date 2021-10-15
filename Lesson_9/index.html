@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="css/style.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Lesson 9</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="h`eader"></header>
+			<main class="main">
+				<!-- 
+				<div class="block">
+					<h1 class="block__title">Я заголовок</h1>
+					<div class="block__sub-title">Я подзаголовок</div>
+					<div class="block__text">
+						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab eius, voluptatum totam ratione, omnis, laborum ipsum nihil at quasi saepe expedita consectetur sit. Iste fugit debitis, optio dolorum molestias placeat?
+					</div>
+					<div class="block__row">
+						<div class="block__column">
+							<div class="block__item"></div>
+						</div>
+						<div class="block__column"></div>
+						<div class="block__column"></div>
+					</div>
+					<a href="" class="block__button">Я ссылка</a>
+
+
+				</div>
+				 -->
+
+				<!-- Вариант с фоном background -->
+				<!-- 
+				<div class="perspiciatis">
+					<div class="perspiciatis__item perspiciatis__item_1">
+						<div class="perspiciatis__title">24/7 Love & Care</div>
+						<div class="perspiciatis__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos dolores et quas.</div>
+					</div>
+					<div class="perspiciatis__item perspiciatis__item_2">
+						<div class="perspiciatis__title">On-site Veterinarian</div>
+						<div class="perspiciatis__text">Dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.</div>
+					</div>
+					<div class="perspiciatis__item perspiciatis__item_3">
+						<div class="perspiciatis__title">Live-stream Cameras</div>
+						<div class="perspiciatis__text">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur illum.</div>
+					</div>
+				</div>
+				 -->
+
+				<!-- Вариант с before  -->
+				<!-- 
+				<div class="perspiciatis">
+					<div class="perspiciatis__item perspiciatis__item_1">
+						<div class="perspiciatis__icon"></div>
+						<div class="perspiciatis__body">
+							<div class="perspiciatis__title">24/7 Love & Care</div>
+							<div class="perspiciatis__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos dolores et quas.</div>
+						</div>
+					</div>
+					<div class="perspiciatis__item perspiciatis__item_2">
+						<div class="perspiciatis__icon"></div>
+						<div class="perspiciatis__body">
+							<div class="perspiciatis__title">On-site Veterinarian</div>
+							<div class="perspiciatis__text">Dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.</div>
+						</div>
+					</div>
+					<div class="perspiciatis__item perspiciatis__item_3">
+						<div class="perspiciatis__icon"></div>
+						<div class="perspiciatis__body">
+							<div class="perspiciatis__title">Live-stream Cameras</div>
+							<div class="perspiciatis__text">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur illum.</div>
+						</div>
+					</div>
+				</div>
+				 -->
+
+				<!-- Вариант с before #2 + :ntc-child()  -->
+				<!-- 
+				<div class="perspiciatis">
+					<div class="perspiciatis__item">
+						<div class="perspiciatis__body">
+							<div class="perspiciatis__title">24/7 Love & Care</div>
+							<div class="perspiciatis__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos dolores et quas.</div>
+						</div>
+					</div>
+					<div class="perspiciatis__item">
+						<div class="perspiciatis__body">
+							<div class="perspiciatis__title">On-site Veterinarian</div>
+							<div class="perspiciatis__text">Dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.</div>
+						</div>
+					</div>
+					<div class="perspiciatis__item">
+						<div class="perspiciatis__body">
+							<div class="perspiciatis__title">Live-stream Cameras</div>
+							<div class="perspiciatis__text">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur illum.</div>
+						</div>
+					</div>
+				</div>
+				 -->
+
+				<!-- Вариант с img  -->
+
+				<!--<div class="perspiciatis">
+					<div class="perspiciatis__item">
+						<div class="perspiciatis__icon">
+							<img src="img/test/01.svg" alt="">
+						</div>
+						<div class="perspiciatis__body">
+							<div class="perspiciatis__title">24/7 Love & Care</div>
+							<div class="perspiciatis__text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos dolores et quas.</div>
+						</div>
+					</div>
+					<div class="perspiciatis__item">
+						<div class="perspiciatis__icon">
+							<img src="img/test/02.svg" alt="">
+						</div>
+						<div class="perspiciatis__body">
+							<div class="perspiciatis__title">On-site Veterinarian</div>
+							<div class="perspiciatis__text">Dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.</div>
+						</div>
+					</div>
+					<div class="perspiciatis__item">
+						<div class="perspiciatis__icon">
+							<img src="img/test/03.svg" alt="">
+						</div>
+						<div class="perspiciatis__body">
+							<div class="perspiciatis__title">Live-stream Cameras</div>
+							<div class="perspiciatis__text">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur illum.</div>
+						</div>
+					</div>
+				</div>-->
+			<div>
+				<h2 class="homework">Верстаем блок (объекты могут быть в одну колонку, не проблема), при наведении добавляем тень.</h2>
+				<div class="doggie">
+					<div class="subtitle">
+						<p >Our Services</p> 
+					</div>
+					<div class="title">
+						Sed perspiciatis omnis iste natus
+					</div>
+					<div class="blokc1">
+						<div class="img">
+							<img src="img/dog/01.svg" alt="">
+						</div>
+						<div class="title_block">
+							Pet Boarding (No Cages)
+						</div>
+						<div class="text_block">
+							At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos dolores et quas.
+						</div>
+					</div>
+					<div class="blokc2">
+						<div class="img">
+							<img src="img/dog/02.svg" alt="">
+						</div>
+						<div class="title_block">
+							Pet Daycare
+						</div>
+						<div class="text_block">
+							At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos dolores et quas.
+						</div>
+					</div>
+					<div class="blokc3">
+						<div class="img">
+							<img src="img/dog/03.svg" alt="">
+						</div>
+						<div class="title_block">
+							Pet Day Spa & Grooming
+						</div>
+						<div class="text_block">
+							At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos dolores et quas.
+						</div>
+					</div>
+					<div class="blokc4">
+						<div class="img">
+							<img src="img/dog/04.svg" alt="">
+						</div>
+						<div class="title_block">
+							Custom Meal Plans
+						</div>
+						<div class="text_block">
+							At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos dolores et quas.
+						</div>
+					</div>
+					<div class="blokc5">
+						<div class="img">
+							<img src="img/dog/05.svg" alt="">
+						</div>
+						<div class="title_block">
+							Pet Training
+						</div>
+						<div class="text_block">
+							At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos dolores et quas.
+						</div>
+					</div>
+					<div class="blokc6">
+						<div class="img">
+							<img src="img/dog/06.svg" alt="">
+						</div>
+						<div class="title_block">
+							Shop Our Store!
+						</div>
+						<div class="text_block">
+							At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos dolores et quas.
+						</div>
+					</div>
+					<div>
+						<a class="link" href="">Learn More</a>
+					</div>
+				</div>
+			</div>
+			<div>
+				<h2 class="homework">Верстаем блок правильно, с учетом моих советов</h2>
+				<div class="doggie2">
+					<div class="subtitle2">
+						OUR PROMISE TO YOU
+					</div>
+					<div class="title2">
+						Sed perspiciatis omnis iste natus
+					</div>
+					<div class="blockdog">
+						<div class="block2_img">
+							<img src="img/dog2/01.svg" alt="">
+						</div>
+						<div class="dog_body">
+							<div class="nameblock">
+								24/7 Love & Care
+							</div>
+							<div class="infoblock">
+								At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium corrupti quos dolores et quas.
+							</div>
+						</div>
+					</div>
+					<div class="blockdog">
+						<div class="block2_img">
+							<img src="img/dog2/02.svg" alt="">
+						</div>
+						<div class="dog_body">
+							<div class="nameblock">
+								On-site Veterinarian
+							</div>
+							<div class="infoblock">
+								Dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt.
+							</div>
+						</div>
+					</div>
+					<div class="blockdog">
+						<div class="block2_img">
+							<img src="img/dog2/03.svg" alt="">
+						</div>
+						<div class="dog_body">
+							<div class="nameblock">
+								Live-stream Cameras
+							</div>
+							<div class="infoblock">
+								Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur illum.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<h2 class="homework">4) Дополнительно, верстаем блок</h2>
+			
+			<div class="doggie3">
+				<div class="dog3_header">
+					<div class="subtitle_dog3">
+						OUR IMPACT
+					</div>
+					<div class="title_dog3">
+						Nemo enim ipsam voluptatem quia voluptas
+					</div>
+				</div>
+				<div class="img_dog3">
+					<img src="img/dog3/Image.png" alt="">
+				</div>
+				<div class="box_all">
+					<div class="box_dog">
+						<div class="box_icon">
+							<img src="img/icon/1.svg" alt="">
+						</div>
+						<div class="box_info">
+							<div class="box_number">
+								3,700
+							</div>
+							<div class="box_meaning">
+								puppy baths
+							</div>
+						</div>
+					</div>
+				
+					<div class="box_dog">
+						<div class="box_icon">
+							<img src="img/icon/2.svg" alt="">
+						</div>
+						<div class="box_info">
+							<div class="box_number">
+								4,500
+							</div>
+							<div class="box_meaning">
+								dogs boarded
+							</div>
+						</div>
+					</div>
+					<div class="box_dog">
+						<div class="box_icon">
+							<img src="img/icon/3.svg" alt="">
+						</div>
+						<div class="box_info">
+							<div class="box_number">
+								2,900
+							</div>
+							<div class="box_meaning">
+								pups trained
+							</div>
+						</div>
+					</div>
+					<div class="box_dog">
+						<div class="box_icon">
+							<img src="img/icon/4.svg" alt="">
+						</div>
+						<div class="box_info">
+							<div class="box_number">
+								12k+
+							</div>
+							<div class="box_meaning">
+								meals served
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+			</main>
+			<footer hidden class="footer"></footer>
+		</div>
+	</body>
+</html>
