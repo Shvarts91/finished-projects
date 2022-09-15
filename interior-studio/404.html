@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>error</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220915202912">
+	<!--<link rel="shortcut icon" href="favicon.ico">
+	 <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper error ">
+		<header id="header" class="header">
+			<div class="header__container">
+				<div class="header__body">
+					<div class="header__block">
+						<a class="header__logo" href="home.html">
+							Logo
+						</a>
+						<div class="header__menu menu">
+							<button data-da=".menu,500,2" id="menu" type="button" class="menu__icon icon-menu"><span></span>
+								<span class="menu__label">Menu</span>
+							</button>
+
+							<nav class="menu__body">
+								<ul class="menu__list">
+									<li class="menu__item menu__item_close"><a href="" class="menu__link">
+											Home
+										</a></li>
+									<li class="menu__item"><a href="" class="menu__link">
+											Projects
+										</a></li>
+									<li class="menu__item"><a href="" class="menu__link">
+											About us
+										</a></li>
+									<li class="menu__item"><a href="" class="menu__link">
+											Blog
+										</a></li>
+									<li class="menu__item"><a href="contacts.html" class="menu__link">
+											Contacts
+										</a></li>
+								</ul>
+								<div class="menu__bottom">
+									<div class="menu__social">
+										<a class="menu__link-social" href="">
+											Fb
+										</a>
+										<a class="menu__link-social" href="">
+											In
+										</a>
+										<a class="menu__link-social" href="">
+											Be
+										</a>
+									</div>
+									<div class="menu__info">
+										<div class="menu__select-new">
+											<select class="menu__select-old">
+												<option class="menu__select-opt" value="1" selected> Berlin</option>
+												<option class="menu__select-opt" value="2">Amsterdam</option>
+												<option class="menu__select-opt" value="3">London</option>
+												<option class="menu__select-opt" value="4">Paris</option>
+											</select>
+										</div>
+										<div class="menu__contacts">
+											<a href="tel:+380935705222" class="menu__phone">
+												+380935705222
+											</a>
+											<a href="email:info@hi-light.pl" class="menu__email">
+												info@hi-light.pl
+											</a>
+										</div>
+									</div>
+								</div>
+							</nav>
+						</div>
+					</div>
+					<div class="header__block header__block_end">
+						<button data-da=".menu,500,0" class="header__button-language">
+							En
+						</button>
+						<a data-da=".menu__body,500,1" href="#popup" class="header__popup">
+							Send Request
+						</a>
+					</div>
+				</div>
+				<div id="popup" class="header__popup popup">
+					<a href="#header" class="popup__area"></a>
+					<div id="popup" class="popup__body">
+						<div class="popup__content">
+							<div class="popup__main">
+								<a href="#header" class="popup__close">X</a>
+								<form action="#" class="popup__form">
+									<div class="popup__top top-popup">
+										<h3 class="top-popup__title1">
+											Calculate the cost of work
+										</h3>
+										<h3 class="top-popup__title2">
+											Make request
+										</h3>
+										<div class="top-popup__box">
+											<div class="top-popup__block">
+												<label class="top-popup__lable" for="input"> Name</label>
+												<input autocomplete="off" type="text" id="input" data-error="Ошибка" class="top-popup__input">
+											</div>
+											<div class="top-popup__block">
+												<label class="top-popup__lable" for="input1"> Last name</label>
+												<input autocomplete="off" type="text" id="input1" data-error="Ошибка" class="top-popup__input">
+											</div>
+											<div class="top-popup__block">
+												<label class="top-popup__lable" for="input2"> Phone</label>
+												<input autocomplete="off" type="tel" id="input2" data-error="Ошибка" class="top-popup__input">
+											</div>
+											<div class="top-popup__block">
+												<label class="top-popup__lable" for="input3"> Your city</label>
+												<input autocomplete="off" type="text" id="input3" data-error="Ошибка" class="top-popup__input">
+											</div>
+											<div class="top-popup__block">
+												<label class="top-popup__lable" for="input4"> Email</label>
+												<input autocomplete="off" type="email" id="input4" data-error="Ошибка" class="top-popup__input">
+											</div>
+											<div class="top-popup__block top-popup__block_select">
+												<label class="top-popup__lable" for="popup-select"> Property type</label>
+												<select id="popup-select" class="top-popup__select">
+													<option value="1">Пункт №1</option>
+													<option value="2">Пункт №2</option>
+													<option value="3">Пункт №3</option>
+													<option selected value="4"></option>
+												</select>
+											</div>
+											<div class="top-popup__block">
+												<label class="top-popup__lable" for="popup-textarea"> Your comment</label>
+												<textarea id="popup-textarea" cols="100%" rows="auto"></textarea>
+											</div>
+										</div>
+									</div>
+									<div class="popup__bottom bottom-popup">
+										<div class="bottom-popup__block-radio">
+											<h3 class="bottom-popup__title">
+												Area (m2)
+											</h3>
+											<div class="bottom-popup__radio">
+												<div class="bottom-popup__radio-block-one">
+													<div class="bottom-popup__box">
+														<p>to 50</p>
+														<label>
+															<input class="bottom-popup__input-radio" type="radio" name="number">
+															<span class="bottom-popup__span-radio"></span>
+														</label>
+													</div>
+													<div class="bottom-popup__box">
+														<p>50-150</p>
+														<label>
+															<input class="bottom-popup__input-radio" type="radio" name="number">
+															<span class="bottom-popup__span-radio"></span>
+														</label>
+
+													</div>
+													<div class="bottom-popup__box">
+														<p>150-250</p>
+														<label>
+															<input class="bottom-popup__input-radio" type="radio" name="number">
+															<span class="bottom-popup__span-radio"></span>
+														</label>
+
+													</div>
+													<div class="bottom-popup__box">
+														<p>250-400</p>
+														<label>
+															<input class="bottom-popup__input-radio" type="radio" name="number">
+															<span class="bottom-popup__span-radio"></span>
+														</label>
+
+													</div>
+												</div>
+												<div class="bottom-popup__radio-block-two">
+													<div class="bottom-popup__box">
+														<p>400-600</p>
+														<label>
+															<input class="bottom-popup__input-radio" type="radio" name="number">
+															<span class="bottom-popup__span-radio"></span>
+														</label>
+
+													</div>
+													<div class="bottom-popup__box">
+														<p>600-800</p>
+														<label>
+															<input class="bottom-popup__input-radio" type="radio" name="number">
+															<span class="bottom-popup__span-radio"></span>
+														</label>
+
+													</div>
+													<div class="bottom-popup__box">
+														<p>800-1000</p>
+														<label>
+															<input class="bottom-popup__input-radio" type="radio" name="number">
+															<span class="bottom-popup__span-radio"></span>
+														</label>
+
+													</div>
+													<div class="bottom-popup__box">
+														<p>1000+</p>
+														<label>
+															<input class="bottom-popup__input-radio" type="radio" name="number">
+															<span class="bottom-popup__span-radio"></span>
+														</label>
+
+													</div>
+												</div>
+
+											</div>
+										</div>
+										<div class="bottom-popup__block">
+											<div class="bottom-popup__file">
+												<label for="popup-file">
+													Attach your file
+													<span class="bottom-popup__file-description">
+														File size not more than 10 MB
+													</span>
+												</label>
+												<input type="file" name="file" id="popup-file">
+
+											</div>
+											<button class="bottom-popup__button" type="submit">
+												Send Request
+											</button>
+										</div>
+										<div class="bottom-popup__text">
+											It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+										</div>
+									</div>
+
+								</form>
+								<div class="popup__two two-popup">
+									<div class="two-popup__main">
+										<h3 class="two-popup__title">
+											Thank you for your message </h3>
+										<div class="two-popup__text">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae posuere. Ut at luctus ligula. Nunc ante felis, aliquam eu enim sed, ornare pretium velit.
+										</div>
+										<a href="#popup" class="two-popup__button">
+											Send again
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page__error ">
+			<div class="error__container">
+				<div class="error__block">
+					<h2 class="error__title">
+						Page not found
+					</h2>
+					<div class="error__text">
+						Something went wrong. Page not found
+					</div>
+					<a class="error__link" href="home.html">
+						go to main
+					</a>
+				</div>
+
+			</div>
+		</main>
+		<div class="error__bottom bottom bottom__container">
+			<div class="bottom__copy">
+				© Copyright 2018. All rights reserved
+			</div>
+			<div class="bottom__made">
+				<p>Made with love in</p>
+				<img src="img/footer/icon.svg?_v=1663262953021" alt="">
+			</div>
+		</div>
+		<!-- <footer class="footer about">
+	<div class="footer__container about__container">
+		<div class="about__decor decor">
+			Contacts
+		</div>
+		<div class="about__main">
+			<div class="about__header">
+				<h2 class="about__title">
+					Drop us a line
+				</h2>
+				<div class="about__text">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper eu mauris vitae posuere. 
+				</div>
+			</div>
+			<div class="about__body">
+				<div class="about__blocks">
+					<div class="about__block">
+						<div class="about__name">
+							Kyiv
+						</div>
+						<div class="about__info">
+							(209) 555-0104 <br>
+							6391 Elgin St. Celina, <br>
+							Delaware 10299 <br>
+						</div>
+					</div>
+					<div class="about__block">
+						<div class="about__name">
+							Lviv
+						</div>
+						<div class="about__info">
+							(209) 555-0104 <br>
+							6391 Elgin St. Celina, <br>
+							Delaware 10299 <br>
+						</div>
+					</div>
+					<div class="about__block">
+						<div class="about__name">
+							Kharkiv
+						</div>
+						<div class="about__info">
+							(209) 555-0104 <br>
+							6391 Elgin St. Celina, <br>
+							Delaware 10299 <br>
+						</div>
+					</div>
+				</div>
+				<div data-da=".about__block-button,767.98,1" class="about__contacts">
+					<a href="email:info@gmail.com" class="about__gmail">
+						info@gmail.com
+					</a>
+					<div class="about__social">
+						<a href="">
+							Fb
+						</a>
+						<a href="">
+							In
+						</a>
+						<a href="">
+							Be
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="about__block-button">
+				<a  href="" class="about__button">
+					Make request
+				</a>
+			</div>
+			
+		</div>
+		<div class="about__bottom bottom">
+			<div class="bottom__copy">
+				© Copyright 2018. All rights reserved
+			</div>
+			<div class="bottom__made">
+				<p>Made with love in</p>
+				<img src="img/footer/icon.svg?_v=1663262953021" alt="">
+			</div>
+		</div>
+	</div>
+</footer>-->
+	</div>
+	<!-- <div class="hystmodal" id="myPopup" aria-hidden="true">
+	<div class="hystmodal__wrap">
+		<div class="hystmodal__window" role="dialog" aria-modal="true">
+			<button data-hystclose class="hystmodal__close">Закрыть</button>
+		</div>
+	</div>
+</div>
+<div class="hystmodal" id="massageName" aria-hidden="true">
+	<div class="hystmodal__wrap">
+		<div class="hystmodal__window" role="dialog" aria-modal="true">
+			<button data-hystclose class="hystmodal__close">Закрыть</button>
+			Сообщение
+		</div>
+	</div>
+</div>
+ -->
+	<script src="js/app.min.js?_v=20220915202913"></script>
+</body>
+
+</html>
